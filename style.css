@@ -7,3 +7,51 @@
 body {
     font-family: 'Lato', sans-serif;
 }
+
+
+#dechet {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+
+#bouteille {
+    width: 10%;
+    height: 150px;
+    background-image: url(assets/sticker-recyclage-bouteille-plastique-eau.jpg);
+    background-size: cover;
+}
+
+#canette {
+    width: 10%;
+    height: 150px;
+    background-image: url(assets/canettes.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#verre {
+    width: 10%;
+    height: 150px;
+    background-image: url(assets/bouteilles_en_verre.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#papier {
+    width: 10%;
+    height: 150px;
+    background-image: url(assets/istockphoto-1129539955-170667a.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#organique {
+    width: 10%;
+    height: 150px;
+    background-image: url(assets/6662790_preview.png);
+    background-size: cover;
+    background-position: center;
+}
