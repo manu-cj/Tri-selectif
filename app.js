@@ -12,37 +12,74 @@ let organique2 = document.getElementById('organique2');
 
 let dechet = [bouteille, canette, verre, papier, organique, journal, conserve, lait, aluminium, organique2]
 
-let yellow = [bouteille, canette, lait];
+let yellow = [bouteille, canette, conserve, lait];
+let green = [verre]
 let jaune = document.getElementById('jaune');
+let vert = document.getElementById('vert');
+let bleu = document.getElementById('bleu');
+let marron = document.getElementById('marron');
+
 
 
 function poubelleJaune(){
     if (bouteille.style.border === 'none'){
         if (yellow.includes(bouteille)){
-            bouteille.style.border = 'ridge 5px green';
+            bouteille.style.border = 'ridge 7px green';
+            yellow.shift()
         }
-        if (!yellow.includes(bouteille)){
+        else {
             bouteille.style.border = 'ridge 5px red';
         }
     }
 
     if (canette.style.border === 'none'){
         if (yellow.includes(canette)){
-            canette.style.border = 'ridge 5px green';
+            yellow.shift()
+            canette.style.border = 'ridge 7px green';
+            console.log(yellow);
         }
-        if (!yellow.includes(canette)){
+        else {
             canette.style.border = 'ridge 5px red';
         }
     }
 
-    if (verre.style.border === 'none'){
-        if (yellow.includes(verre)){
-            verre.style.border = 'ridge 5px green';
+    if (conserve.style.border === 'none'){
+        if (yellow.includes(conserve)){
+            conserve.style.border = 'ridge 7px green';
+            yellow.shift()
+            console.log(yellow);
         }
-        if (!yellow.includes(verre)){
+        else {
+            conserve.style.border = 'ridge 5px red';
+        }
+    }
+
+    if (lait.style.border === 'none'){
+        if (yellow.includes(lait)){
+            lait.style.border = 'ridge 7px green';
+            yellow.shift()
+            console.log(yellow);
+        }
+        else {
+            lait.style.border = 'ridge 5px red';
+        }
+    }
+
+
+
+}
+
+function poubelleVerte(){
+    if (verre.style.border === 'none'){
+        if (green.includes(verre)){
+            verre.style.border = 'ridge 7px green';
+            green.shift()
+        }
+        else {
             verre.style.border = 'ridge 5px red';
         }
-    }verre
+    }
+
 }
 
 
@@ -52,7 +89,8 @@ function poubelleJaune(){
 
 
 bouteille.addEventListener("click", function (){
-    this.style.border = 'none';
+        this.style.border = 'none';
+
 })
 
 canette.addEventListener("click", function (){
@@ -63,6 +101,40 @@ verre.addEventListener("click", function (){
     this.style.border = 'none';
 })
 
+papier.addEventListener("click", function (){
+    this.style.border = 'none';
+})
+
+organique.addEventListener("click", function (){
+    this.style.border = 'none';
+})
+
+journal.addEventListener("click", function (){
+    this.style.border = 'none';
+})
+
+conserve.addEventListener("click", function (){
+    this.style.border = 'none';
+})
+
+lait.addEventListener("click", function (){
+    this.style.border = 'none';
+})
+
+aluminium.addEventListener("click", function (){
+    this.style.border = 'none';
+})
+
+organique2.addEventListener("click", function (){
+    this.style.border = 'none';
+})
+
+
+
+
 jaune.addEventListener("click", function (){
   poubelleJaune()
+})
+vert.addEventListener("click", function (){
+    poubelleVerte()
 })
