@@ -6,52 +6,111 @@
 
 body {
     font-family: 'Lato', sans-serif;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
 }
 
 
 #dechet {
+    width: 20%;
+    height: 600px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    align-items: center;
+    background-color: mediumslateblue;
 }
 
+.dechets {
+    border: ridge 5px black;
+}
 
+.dechets:hover {
+    border: ridge 5px indianred;
+    cursor: pointer;
+}
 
 #bouteille {
-    width: 10%;
-    height: 150px;
+    width: 40%;
+    height: 100px;
     background-image: url(assets/sticker-recyclage-bouteille-plastique-eau.jpg);
     background-size: cover;
 }
 
 #canette {
-    width: 10%;
-    height: 150px;
+    width: 40%;
+    height: 100px;
     background-image: url(assets/canettes.jpg);
     background-size: cover;
     background-position: center;
 }
 
 #verre {
-    width: 10%;
-    height: 150px;
+    width: 40%;
+    height: 100px;
     background-image: url(assets/bouteilles_en_verre.jpg);
     background-size: cover;
     background-position: center;
 }
 
 #papier {
-    width: 10%;
-    height: 150px;
+    width: 40%;
+    height: 100px;
     background-image: url(assets/istockphoto-1129539955-170667a.jpg);
     background-size: cover;
     background-position: center;
 }
 
 #organique {
-    width: 10%;
-    height: 150px;
+    width: 40%;
+    height: 100px;
     background-image: url(assets/6662790_preview.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#journal {
+    width: 40%;
+    height: 100px;
+    background-image: url(assets/13589663.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#conserve {
+    width: 40%;
+    height: 100px;
+    background-image: url(assets/120644922.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#lait {
+    width: 40%;
+    height: 100px;
+    background-image: url(assets/brique-de-lait-1-2-ecreme-carrefour-1l-uht.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#aluminium {
+    width: 40%;
+    height: 100px;
+    background-image: url(assets/barquette-en-aluminium-350-ml.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#organique2 {
+    width: 40%;
+    height: 100px;
+    background-image: url(assets/dechets_organiques.jpg);
     background-size: cover;
     background-position: center;
 }
