@@ -1,3 +1,6 @@
+//faire le score et revoir la supression des element c'est pas assez precis
+
+
 let bouteille = document.getElementById('bouteille');
 let canette = document.getElementById('canette');
 let verre = document.getElementById('verre');
@@ -21,9 +24,12 @@ let vert = document.getElementById('vert');
 let bleu = document.getElementById('bleu');
 let marron = document.getElementById('marron');
 
+let score = document.getElementById('score');
+let points = 1;
 
 
 function poubelleJaune(){
+
     if (bouteille.style.border === 'none'){
         if (yellow.includes(bouteille)){
             bouteille.style.border = 'ridge 7px green';
@@ -191,7 +197,10 @@ organique2.addEventListener("click", function (){
 
 
 jaune.addEventListener("click", function (){
-  poubelleJaune()
+    for(let i = 0 ; i < 1 ; i++) {
+        poubelleJaune()
+        score.innerHTML += points++
+    }
 })
 vert.addEventListener("click", function (){
     poubelleVerte()

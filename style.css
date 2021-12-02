@@ -28,6 +28,17 @@ body {
     border-radius: 20px;
 }
 
+#regle {
+    width: 25%;
+    border: ridge honeydew 5px;
+    color: honeydew;
+    padding: 15px;
+}
+
+li {
+    margin: 10px;
+}
+
 
 #dechet {
     width: 20%;
