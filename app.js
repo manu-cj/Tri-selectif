@@ -12,8 +12,10 @@ let organique2 = document.getElementById('organique2');
 
 let dechet = [bouteille, canette, verre, papier, organique, journal, conserve, lait, aluminium, organique2]
 
-let yellow = [bouteille, canette, conserve, lait];
-let green = [verre]
+let yellow = [bouteille, canette, conserve, lait, aluminium];
+let green = [verre];
+let blue = [papier, journal];
+let maroon = [organique, organique2];
 let jaune = document.getElementById('jaune');
 let vert = document.getElementById('vert');
 let bleu = document.getElementById('bleu');
@@ -65,6 +67,17 @@ function poubelleJaune(){
         }
     }
 
+    if (aluminium.style.border === 'none'){
+        if (yellow.includes(aluminium)){
+            aluminium.style.border = 'ridge 7px green';
+            yellow.shift()
+            console.log(yellow);
+        }
+        else {
+            aluminium.style.border = 'ridge 5px red';
+        }
+    }
+
 
 
 }
@@ -82,6 +95,51 @@ function poubelleVerte(){
 
 }
 
+function poubelleBleu(){
+    if (papier.style.border === 'none'){
+        if (blue.includes(papier)){
+            papier.style.border = 'ridge 7px green';
+            blue.shift()
+        }
+        else {
+            papier.style.border = 'ridge 5px red';
+        }
+    }
+
+    if (journal.style.border === 'none'){
+        if (blue.includes(journal)){
+            journal.style.border = 'ridge 7px green';
+            blue.shift()
+        }
+        else {
+            journal.style.border = 'ridge 5px red';
+        }
+    }
+
+}
+
+function poubelleMarron(){
+    if (organique.style.border === 'none'){
+        if (maroon.includes(organique)){
+            organique.style.border = 'ridge 7px green';
+            maroon.shift();
+        }
+        else {
+            organique.style.border = 'ridge 5px red';
+        }
+    }
+
+    if (organique2.style.border === 'none'){
+        if (maroon.includes(organique2)){
+            organique2.style.border = 'ridge 7px green';
+            maroon.shift();
+        }
+        else {
+            organique2.style.border = 'ridge 5px red';
+        }
+    }
+
+}
 
 
 
@@ -137,4 +195,10 @@ jaune.addEventListener("click", function (){
 })
 vert.addEventListener("click", function (){
     poubelleVerte()
+})
+bleu.addEventListener("click", function (){
+    poubelleBleu()
+})
+marron.addEventListener("click", function (){
+    poubelleMarron()
 })
