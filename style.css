@@ -8,10 +8,24 @@ body {
     font-family: 'Lato', sans-serif;
     width: 100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-around;
     align-content: space-around;
+    text-align: center;
+}
+
+#jeu {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-around;
+    background-color: #414156;
+    padding: 25px;
+    border: ridge 10px cornflowerblue;
+    border-radius: 20px;
 }
 
 
@@ -25,6 +39,9 @@ body {
     align-content: space-around;
     align-items: center;
     background-color: mediumslateblue;
+    margin: 40px;
+    border: ridge 10px #6f8fab;
+    border-radius: 15px;
 }
 
 .dechets {
@@ -113,4 +130,51 @@ body {
     background-image: url(assets/dechets_organiques.jpg);
     background-size: cover;
     background-position: center;
+}
+
+#poubelles {
+    height: 600px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background-color: #3b3939;
+    border-radius: 15px;
+    border: ridge 5px honeydew;
+    text-align: center;
+    margin: 40px;
+}
+
+i {
+    font-size: 8em;
+    margin: 10px;
+}
+
+i:hover {
+    cursor: pointer;
+}
+
+#jaune {
+    width: 80%;
+    height: 25%;
+    color: #c2c214;
+}
+
+#vert {
+    width: 80%;
+    height: 25%;
+    color: green;
+}
+
+#bleu {
+    width: 80%;
+    height: 25%;
+    color: blue;
+}
+
+#marron {
+    width: 80%;
+    height: 25%;
+    color: #a66e20;
 }
