@@ -210,7 +210,7 @@ i:hover {
     }
 
     #jeu {
-        width: 100%;
+        width: 80%;
         flex-direction: row;
         flex-wrap: wrap;
         margin: 0;
