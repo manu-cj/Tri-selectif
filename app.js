@@ -1,6 +1,6 @@
 //faire le score et revoir la supression des element c'est pas assez precis
 
-
+let dechet = document.querySelectorAll('.dechets');
 let bouteille = document.getElementById('bouteille');
 let canette = document.getElementById('canette');
 let verre = document.getElementById('verre');
@@ -13,7 +13,7 @@ let aluminium = document.getElementById('aluminium');
 let organique2 = document.getElementById('organique2');
 
 
-let dechet = [bouteille, canette, verre, papier, organique, journal, conserve, lait, aluminium, organique2]
+let dechets = [bouteille, canette, verre, papier, organique, journal, conserve, lait, aluminium, organique2]
 
 let yellow = [bouteille, canette, conserve, lait, aluminium];
 let green = [verre];
@@ -34,6 +34,9 @@ function poubelleJaune(){
         if (yellow.includes(bouteille)){
             bouteille.style.border = 'ridge 7px green';
             yellow.shift()
+            for(let i = 0 ; i <1 ; i++) {
+                score.innerHTML = points++
+            }
         }
         else {
             bouteille.style.border = 'ridge 5px red';
@@ -44,6 +47,9 @@ function poubelleJaune(){
         if (yellow.includes(canette)){
             yellow.shift()
             canette.style.border = 'ridge 7px green';
+            for(let i = 0 ; i <1 ; i++) {
+                score.innerHTML = points++
+            }
             console.log(yellow);
         }
         else {
@@ -55,6 +61,9 @@ function poubelleJaune(){
         if (yellow.includes(conserve)){
             conserve.style.border = 'ridge 7px green';
             yellow.shift()
+            for(let i = 0 ; i <1 ; i++) {
+                score.innerHTML = points++
+            }
             console.log(yellow);
         }
         else {
@@ -197,10 +206,7 @@ organique2.addEventListener("click", function (){
 
 
 jaune.addEventListener("click", function (){
-    for(let i = 0 ; i < 1 ; i++) {
         poubelleJaune()
-        score.innerHTML += points++
-    }
 })
 vert.addEventListener("click", function (){
     poubelleVerte()
