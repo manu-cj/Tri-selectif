@@ -193,3 +193,125 @@ i:hover {
     height: 25%;
     color: #a66e20;
 }
+
+@media screen and (max-width: 620px){
+    body{
+        display: flex;
+        flex-direction: row;
+    }
+
+    #regle {
+        width: 80%;
+    }
+
+    .dechets {
+        border: ridge 5px black;
+        margin: 5px;
+    }
+
+    #jeu {
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 0;
+    }
+
+    #dechet {
+        width: 50%;
+        height: 250px;
+        border: ridge 5px #ffffff;
+        margin: 0;
+    }
+
+
+    #bouteille {
+        width: 25%;
+        height: 20px;
+    }
+
+    #canette {
+        width: 20%;
+        height: 20px;
+    }
+
+    #verre {
+        width: 20%;
+        height: 20px;
+    }
+
+    #papier {
+        width: 20%;
+        height: 20px;
+    }
+
+    #organique {
+        width: 20%;
+        height: 20px;
+    }
+
+    #journal {
+        width: 20%;
+        height: 20px;
+    }
+
+    #conserve {
+        width: 20%;
+        height: 20px;
+    }
+
+    #lait {
+        width: 20%;
+        height: 20px;
+    }
+
+    #aluminium {
+        width: 20%;
+        height: 20px;
+    }
+
+    #organique2 {
+        width: 20%;
+        height: 20px;
+    }
+
+    #poubelles {
+        width: 20%;
+        height: 200px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        background-color: #3b3939;
+        border-radius: 15px;
+        border: ridge 5px honeydew;
+        text-align: center;
+        margin: 0;
+    }
+
+    i {
+        font-size: 2em;
+        margin: 10px;
+    }
+
+    #jaune {
+        width: 20%;
+        color: #c2c214;
+    }
+
+    #vert {
+        width: 20%;
+        color: green;
+    }
+
+    #bleu {
+        width: 20%;
+        color: blue;
+    }
+
+    #marron {
+        width: 20%;
+        color: #a66e20;
+    }
+
+}
