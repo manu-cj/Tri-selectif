@@ -1,6 +1,6 @@
-//faire le score et revoir la supression des element c'est pas assez precis
+//revoir la supression des element c'est pas assez precis
 
-let dechet = document.querySelectorAll('.dechets');
+
 let bouteille = document.getElementById('bouteille');
 let canette = document.getElementById('canette');
 let verre = document.getElementById('verre');
@@ -13,7 +13,7 @@ let aluminium = document.getElementById('aluminium');
 let organique2 = document.getElementById('organique2');
 
 
-let dechets = [bouteille, canette, verre, papier, organique, journal, conserve, lait, aluminium, organique2]
+
 
 let yellow = [bouteille, canette, conserve, lait, aluminium];
 let green = [verre];
