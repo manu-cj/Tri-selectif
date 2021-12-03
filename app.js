@@ -26,6 +26,17 @@ let marron = document.getElementById('marron');
 
 let score = document.getElementById('score');
 let points = 1;
+let gagner = document.getElementById('gagner');
+
+function ajoutPoints() {
+    for(let i = 0 ; i <1 ; i++) {
+        score.innerHTML = 'Score : ' + points++;
+    }
+    if (score.innerHTML === 'Score : 10'){
+        gagner.innerHTML = 'Vous avez gagné';
+        gagner.style.color = 'green';
+    }
+}
 
 
 function poubelleJaune(){
@@ -34,9 +45,7 @@ function poubelleJaune(){
         if (yellow.includes(bouteille)){
             bouteille.style.border = 'ridge 7px green';
             yellow.shift()
-            for(let i = 0 ; i <1 ; i++) {
-                score.innerHTML = points++
-            }
+            ajoutPoints()
         }
         else {
             bouteille.style.border = 'ridge 5px red';
@@ -47,10 +56,7 @@ function poubelleJaune(){
         if (yellow.includes(canette)){
             yellow.shift()
             canette.style.border = 'ridge 7px green';
-            for(let i = 0 ; i <1 ; i++) {
-                score.innerHTML = points++
-            }
-            console.log(yellow);
+            ajoutPoints()
         }
         else {
             canette.style.border = 'ridge 5px red';
@@ -61,10 +67,7 @@ function poubelleJaune(){
         if (yellow.includes(conserve)){
             conserve.style.border = 'ridge 7px green';
             yellow.shift()
-            for(let i = 0 ; i <1 ; i++) {
-                score.innerHTML = points++
-            }
-            console.log(yellow);
+            ajoutPoints()
         }
         else {
             conserve.style.border = 'ridge 5px red';
@@ -75,7 +78,7 @@ function poubelleJaune(){
         if (yellow.includes(lait)){
             lait.style.border = 'ridge 7px green';
             yellow.shift()
-            console.log(yellow);
+            ajoutPoints()
         }
         else {
             lait.style.border = 'ridge 5px red';
@@ -86,7 +89,7 @@ function poubelleJaune(){
         if (yellow.includes(aluminium)){
             aluminium.style.border = 'ridge 7px green';
             yellow.shift()
-            console.log(yellow);
+            ajoutPoints()
         }
         else {
             aluminium.style.border = 'ridge 5px red';
@@ -102,6 +105,7 @@ function poubelleVerte(){
         if (green.includes(verre)){
             verre.style.border = 'ridge 7px green';
             green.shift()
+            ajoutPoints()
         }
         else {
             verre.style.border = 'ridge 5px red';
@@ -115,6 +119,7 @@ function poubelleBleu(){
         if (blue.includes(papier)){
             papier.style.border = 'ridge 7px green';
             blue.shift()
+            ajoutPoints()
         }
         else {
             papier.style.border = 'ridge 5px red';
@@ -125,6 +130,7 @@ function poubelleBleu(){
         if (blue.includes(journal)){
             journal.style.border = 'ridge 7px green';
             blue.shift()
+            ajoutPoints()
         }
         else {
             journal.style.border = 'ridge 5px red';
@@ -138,6 +144,7 @@ function poubelleMarron(){
         if (maroon.includes(organique)){
             organique.style.border = 'ridge 7px green';
             maroon.shift();
+            ajoutPoints()
         }
         else {
             organique.style.border = 'ridge 5px red';
@@ -148,6 +155,7 @@ function poubelleMarron(){
         if (maroon.includes(organique2)){
             organique2.style.border = 'ridge 7px green';
             maroon.shift();
+            ajoutPoints()
         }
         else {
             organique2.style.border = 'ridge 5px red';
