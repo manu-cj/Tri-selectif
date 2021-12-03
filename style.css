@@ -35,7 +35,7 @@ body {
     border: ridge honeydew 5px;
     color: honeydew;
     padding: 15px;
-    background-color: #3b3939;
+    background-color: #004100;
 }
 
 li {
@@ -52,7 +52,7 @@ li {
     justify-content: space-around;
     align-content: space-around;
     align-items: center;
-    background-color: #383737;
+    background-color: #004100;
     margin: 40px;
     border: ridge 10px #ffffff;
     border-radius: 15px;
@@ -154,7 +154,7 @@ li {
     justify-content: center;
     align-content: center;
     align-items: center;
-    background-color: #3b3939;
+    background-color: #004100;
     border-radius: 15px;
     border: ridge 5px honeydew;
     text-align: center;
@@ -277,15 +277,6 @@ i:hover {
     #poubelles {
         width: 20%;
         height: 200px;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-content: center;
-        align-items: center;
-        background-color: #3b3939;
-        border-radius: 15px;
-        border: ridge 5px honeydew;
-        text-align: center;
         margin: 0;
     }
 
