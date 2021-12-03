@@ -23,6 +23,7 @@ let score = document.getElementById('score');
 let points = 1;
 let gagner = document.getElementById('gagner');
 
+//ajout des points
 function ajoutPoints() {
     for(let i = 0 ; i <1 ; i++) {
         score.innerHTML = 'Score : ' + points++;
@@ -33,7 +34,7 @@ function ajoutPoints() {
     }
 }
 
-
+//function des poubelles
 function poubelleJaune(){
 
     if (bouteille.style.border === 'none'){
@@ -157,7 +158,7 @@ function poubelleMarron(){
 }
 
 
-
+//click des déchets
 bouteille.addEventListener("click", function (){
         this.style.border = 'none';
 
@@ -199,9 +200,7 @@ organique2.addEventListener("click", function (){
     this.style.border = 'none';
 })
 
-
-
-
+//click des poubelles
 jaune.addEventListener("click", function (){
         poubelleJaune()
 })
