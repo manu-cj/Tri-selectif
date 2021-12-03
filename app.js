@@ -44,7 +44,7 @@ function poubelleJaune(){
     if (bouteille.style.border === 'none'){
         if (yellow.includes(bouteille)){
             bouteille.style.border = 'ridge 7px green';
-            yellow.shift()
+            yellow.splice(0, 1);
             ajoutPoints()
         }
         else {
@@ -54,7 +54,7 @@ function poubelleJaune(){
 
     if (canette.style.border === 'none'){
         if (yellow.includes(canette)){
-            yellow.shift()
+            yellow.splice(0, 1);
             canette.style.border = 'ridge 7px green';
             ajoutPoints()
         }
@@ -66,7 +66,7 @@ function poubelleJaune(){
     if (conserve.style.border === 'none'){
         if (yellow.includes(conserve)){
             conserve.style.border = 'ridge 7px green';
-            yellow.shift()
+            yellow.splice(0, 1);
             ajoutPoints()
         }
         else {
@@ -77,7 +77,7 @@ function poubelleJaune(){
     if (lait.style.border === 'none'){
         if (yellow.includes(lait)){
             lait.style.border = 'ridge 7px green';
-            yellow.shift()
+            yellow.splice(0, 1);
             ajoutPoints()
         }
         else {
@@ -88,7 +88,7 @@ function poubelleJaune(){
     if (aluminium.style.border === 'none'){
         if (yellow.includes(aluminium)){
             aluminium.style.border = 'ridge 7px green';
-            yellow.shift()
+            yellow.splice(0, 1);
             ajoutPoints()
         }
         else {
@@ -104,7 +104,7 @@ function poubelleVerte(){
     if (verre.style.border === 'none'){
         if (green.includes(verre)){
             verre.style.border = 'ridge 7px green';
-            green.shift()
+            green.splice(0, 1);
             ajoutPoints()
         }
         else {
@@ -118,7 +118,7 @@ function poubelleBleu(){
     if (papier.style.border === 'none'){
         if (blue.includes(papier)){
             papier.style.border = 'ridge 7px green';
-            blue.shift()
+            blue.splice(0, 1);
             ajoutPoints()
         }
         else {
@@ -129,7 +129,7 @@ function poubelleBleu(){
     if (journal.style.border === 'none'){
         if (blue.includes(journal)){
             journal.style.border = 'ridge 7px green';
-            blue.shift()
+            blue.splice(0, 1);
             ajoutPoints()
         }
         else {
@@ -143,7 +143,7 @@ function poubelleMarron(){
     if (organique.style.border === 'none'){
         if (maroon.includes(organique)){
             organique.style.border = 'ridge 7px green';
-            maroon.shift();
+            maroon.splice(0, 1);
             ajoutPoints()
         }
         else {
@@ -154,7 +154,7 @@ function poubelleMarron(){
     if (organique2.style.border === 'none'){
         if (maroon.includes(organique2)){
             organique2.style.border = 'ridge 7px green';
-            maroon.shift();
+            maroon.splice(0, 1);
             ajoutPoints()
         }
         else {
