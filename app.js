@@ -1,6 +1,3 @@
-//revoir la supression des element c'est pas assez precis
-
-
 let bouteille = document.getElementById('bouteille');
 let canette = document.getElementById('canette');
 let verre = document.getElementById('verre');
@@ -11,8 +8,6 @@ let conserve = document.getElementById('conserve');
 let lait = document.getElementById('lait');
 let aluminium = document.getElementById('aluminium');
 let organique2 = document.getElementById('organique2');
-
-
 
 
 let yellow = [bouteille, canette, conserve, lait, aluminium];
@@ -95,9 +90,6 @@ function poubelleJaune(){
             aluminium.style.border = 'ridge 5px red';
         }
     }
-
-
-
 }
 
 function poubelleVerte(){
@@ -163,9 +155,6 @@ function poubelleMarron(){
     }
 
 }
-
-
-
 
 
 

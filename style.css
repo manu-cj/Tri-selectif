@@ -13,6 +13,8 @@ body {
     justify-content: space-around;
     align-content: space-around;
     text-align: center;
+    background-color: #024f02;
+    color: white;
 }
 
 #jeu {
@@ -22,10 +24,10 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     align-content: space-around;
-    background-color: #414156;
     padding: 25px;
-    border: ridge 10px cornflowerblue;
+    border: ridge 10px #ffffff;
     border-radius: 20px;
+    background-color: #257725;
 }
 
 #regle {
@@ -33,6 +35,7 @@ body {
     border: ridge honeydew 5px;
     color: honeydew;
     padding: 15px;
+    background-color: #3b3939;
 }
 
 li {
@@ -49,9 +52,9 @@ li {
     justify-content: space-around;
     align-content: space-around;
     align-items: center;
-    background-color: mediumslateblue;
+    background-color: #2d2d2d;
     margin: 40px;
-    border: ridge 10px #6f8fab;
+    border: ridge 10px #ffffff;
     border-radius: 15px;
 }
 
